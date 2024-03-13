@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="detect" type="">
+    <button onclick="age()">detect</button>
+    <br><br><br><br>
+
+    <input id="input1" type="password">
+    <input id="input2" type="password">
+    <button onclick="confirm()">Confirm password</button>
+</body>
+</html>
+<script>
+let input=document.getElementById("detect")
+    let name =18
+
+function age(){
+    if (input.value >= name) {
+        alert('you are eligible to use the website')
+    }
+    else{
+        alert('you are not eligible to use the website')
+    }
+}
+let input1= document.getElementById('input1')
+let input2=document.getElementById('input2')
+function confirm(){
+if(input1.value == input2.value){
+    alert('approved')
+}
+else{
+    alert('passwords not matching')
+}
+}
+</script>
